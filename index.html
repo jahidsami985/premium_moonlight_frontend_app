@@ -12,7 +12,7 @@
       <script>
         window.__loadGitHubPagesBundle = function () {
           if (!/\.github\.io$/.test(window.location.hostname) || window.__githubPagesBundleLoaded) return;
-          if (document.querySelector('script[src$="/assets/index-CNh11qHH.js"]')) return;
+          if (document.querySelector('script[type="module"][src*="/assets/index-"]')) return;
           window.__githubPagesBundleLoaded = true;
 
           var stylesheet = document.createElement('link');
