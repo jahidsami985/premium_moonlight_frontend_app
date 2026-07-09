@@ -9,13 +9,36 @@
       <meta name="description" content="A modern, premium multi-brand South Asian fashion e-commerce platform offering diverse stitched and unstitched outfits with seamless browsing and shopping." />
       <meta name="robots" content="noindex, nofollow" />
       <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+      <script>
+        window.__loadGitHubPagesBundle = function () {
+          if (!/\.github\.io$/.test(window.location.hostname) || window.__githubPagesBundleLoaded) return;
+          if (document.querySelector('script[src$="/assets/index-CNh11qHH.js"]')) return;
+          window.__githubPagesBundleLoaded = true;
+
+          var stylesheet = document.createElement('link');
+          stylesheet.rel = 'stylesheet';
+          stylesheet.crossOrigin = '';
+          stylesheet.href = '/premium_moonlight_frontend_app/assets/index-CNem_MAg.css';
+          document.head.appendChild(stylesheet);
+
+          var script = document.createElement('script');
+          script.type = 'module';
+          script.crossOrigin = '';
+          script.src = '/premium_moonlight_frontend_app/assets/index-CNh11qHH.js';
+          document.body.appendChild(script);
+        };
+
+        if (/\.github\.io$/.test(window.location.hostname)) {
+          window.setTimeout(window.__loadGitHubPagesBundle, 100);
+        }
+      </script>
       
     </head>
 
     <body>
       
       <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
+      <script type="module" src="/src/main.tsx" onerror="window.__loadGitHubPagesBundle && window.__loadGitHubPagesBundle()"></script>
       
     </body>
   </html>
